@@ -48,6 +48,6 @@ select date(max(rental_date)) from sakila.rental;
 
 select *, date_format(rental_date,'%M') as Month_, date_format(rental_date,'%Y')  as Year_
 from sakila.rental;
-having Month_ = 'August' and Year_ = 2005;
+having Month_ = 'February' and Year_ = 2006;
 -- figure out how to next this into count, or create a subquery for count of this output!
 select count(*);
